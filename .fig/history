@@ -1,0 +1,49 @@
+
+- command: cd Downloads/
+  exit_code: 0
+  shell: zsh
+  session_id: b1f14a1e-c5da-4371-9c2e-3b8fe7d1955a
+  cwd: /home/luhm
+  time: 1665970414
+- command: ls
+  exit_code: 0
+  shell: zsh
+  session_id: b1f14a1e-c5da-4371-9c2e-3b8fe7d1955a
+  cwd: /home/luhm/Downloads
+  time: 1665970422
+- command: cd ..
+  exit_code: 0
+  shell: zsh
+  session_id: b1f14a1e-c5da-4371-9c2e-3b8fe7d1955a
+  cwd: /home/luhm/Downloads
+  time: 1665970428
+- command: mkdir .dotfiles
+  exit_code: 0
+  shell: zsh
+  session_id: b1f14a1e-c5da-4371-9c2e-3b8fe7d1955a
+  cwd: /home/luhm
+  time: 1665970433
+- command: cat .gitconfig
+  exit_code: 0
+  shell: zsh
+  session_id: b1f14a1e-c5da-4371-9c2e-3b8fe7d1955a
+  cwd: /home/luhm
+  time: 1665970605
+- command: git config user.email '62779084+henriqueluhm@users.noreply.github.com'
+  exit_code: 128
+  shell: zsh
+  session_id: b1f14a1e-c5da-4371-9c2e-3b8fe7d1955a
+  cwd: /home/luhm
+  time: 1665970673
+- command: git config --global user.email '62779084+henriqueluhm@users.noreply.github.com'
+  exit_code: 0
+  shell: zsh
+  session_id: b1f14a1e-c5da-4371-9c2e-3b8fe7d1955a
+  cwd: /home/luhm
+  time: 1665970689
+- command: cat .gitconfig
+  exit_code: 0
+  shell: zsh
+  session_id: b1f14a1e-c5da-4371-9c2e-3b8fe7d1955a
+  cwd: /home/luhm
+  time: 1665970692
