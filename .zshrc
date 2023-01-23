@@ -5,6 +5,11 @@ eval "$(oh-my-posh init zsh --config '~/.poshthemes/amro.omp.json')"
 
 #  My custom aliases
 alias nv="nvim"
+alias run="pnpm dev"
+alias deploy="pnpm deploy henrique"
+alias back="cd && cd Documents/Coding/cis/backend"
+alias front="cd && cd Documents/Coding/cis/frontend"
+alias icons="cd && cd Documents/Coding/cis/frontend/src/assets/icons && nemo ."
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
