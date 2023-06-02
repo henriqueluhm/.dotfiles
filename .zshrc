@@ -5,11 +5,13 @@ eval "$(oh-my-posh init zsh --config '~/.poshthemes/amro.omp.json')"
 
 #  My custom aliases
 alias nv="nvim"
-alias run="pnpm dev"
-alias deploy="pnpm deploy henrique"
-alias back="cd && cd Documents/Coding/cis/backend"
-alias front="cd && cd Documents/Coding/cis/frontend"
-alias icons="cd && cd Documents/Coding/cis/frontend/src/assets/icons && nemo ."
+alias run="cd ~/Documents/Coding/cis/frontend && pnpm dev"
+alias deploy="cd ~/Documents/Coding/cis && pnpm tf:deploy henrique ces"
+alias cis="cd ~/Documents/Coding/cis"
+alias back="cd ~/Documents/Coding/cis/backend"
+alias front="cd ~/Documents/Coding/cis/frontend"
+alias icons="cd ~/Documents/Coding/cis/frontend/src/assets/icons && nemo ."
+alias kchronf="echo 0 | sudo tee /sys/module/hid_apple/parameters/fnmode"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -46,3 +48,7 @@ zinit light zsh-users/zsh-completions
 
 # Fig post block. Keep at the bottom of this file.
 # [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+# pnpm
+export PNPM_HOME="/home/luhm/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
