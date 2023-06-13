@@ -13,6 +13,8 @@ alias front="cd ~/Documents/Coding/cis/frontend"
 alias icons="cd ~/Documents/Coding/cis/frontend/src/assets/icons && nemo ."
 alias kchronf="echo 0 | sudo tee /sys/module/hid_apple/parameters/fnmode"
 
+bindkey '^H' backward-kill-word
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
