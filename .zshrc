@@ -1,9 +1,8 @@
-# Fig pre block. Keep at the top of this file.
-# [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
-# Created by newuser for 5.8.1
+# Created by luhm for 5.8.1\
+
 eval "$(oh-my-posh init zsh --config '~/.poshthemes/amro.omp.json')"
 
-#  My custom aliases
+# custom aliases
 alias nv="nvim"
 alias run="cd ~/Documents/Coding/cis/frontend && pnpm dev"
 alias deploy="cd ~/Documents/Coding/cis && pnpm tf:deploy henrique ces"
@@ -14,12 +13,6 @@ alias icons="cd ~/Documents/Coding/cis/frontend/src/assets/icons && nemo ."
 alias keychron="echo 0 | sudo tee /sys/module/hid_apple/parameters/fnmode"
 
 bindkey '^H' backward-kill-word
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
@@ -48,9 +41,8 @@ zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 
-# Fig post block. Keep at the bottom of this file.
-# [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
 # pnpm
 export PNPM_HOME="/home/luhm/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
+export PATH="$HOME/bin:$PATH"
 # pnpm end
