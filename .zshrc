@@ -41,6 +41,13 @@ zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 
+# nvim
+if [ -d ~/bin/nvim-linux64/bin ]
+then
+  PATH=$PATH:~/bin/nvim-linux64/bin
+fi
+# nvim end  
+
 # pnpm
 export PNPM_HOME="/home/luhm/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
